@@ -1,0 +1,1039 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Comfortaa', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR SCROLL */
+.navbar-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    transform: translateY(-100%);
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 50px;
+    z-index: 999;
+
+    transform: translateY(-100%);
+    transition: 0.4s ease;
+}
+
+.navbar-scroll.active {
+    transform: translateY(0);
+}
+
+.nav-left img {
+    height: 50px;
+}
+
+.nav-center {
+    font-weight: 600;
+    color: #144e8c;
+}
+
+.nav-right a {
+    margin-left: 20px;
+    color: #144e8c;
+    text-decoration: none;
+
+    position: relative;
+}
+
+.nav-right a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #144e8c;
+    transition: 0.3s;
+}
+
+.nav-right a:hover::after {
+    width: 100%;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+    background: url("/images/aboutme.svg") no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: white;
+    overflow: hidden;
+}
+
+/* OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 25px 60px;
+    z-index: 10;
+}
+
+/* LOGO */
+.logo img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+
+    /* nếu logo tối quá thì bật cái này */
+    /* filter: brightness(0) invert(1); */
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu a {
+    margin-left: 35px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* hover underline đẹp */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu a:hover {
+    opacity: 0.8;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+
+    animation: fadeInUp 1.2s ease;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    text-align: justify;
+}
+
+/* ANIMATION */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .menu a {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
+
+/* TEXT LAYOUT GIỐNG DESIGN */
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 700px;
+    margin-left: 50px;
+
+    text-align: left;
+}
+
+/* dòng nhỏ phía trên */
+.small-title {
+    display: block;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* tên to */
+.big-title {
+    display: block;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+/* đoạn mô tả */
+.description {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 570px;
+    opacity: 0.95;
+}
+
+/* =========================
+   SECTION 2 - ABOUT ME
+========================= */
+
+.about-section {
+    background-color: #E6FFEF;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* chia layout full ngang */
+.about-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+/* ===== TEXT ===== */
+.about-text {
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 110px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #407855;
+}
+
+.about-text h2 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+
+    text-align: justify;
+}
+
+/* ===== IMAGE ===== */
+.about-image {
+    width: 50%;
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end; /* ❗ sát mép phải */
+}
+
+/* ảnh trong about */
+.about-image img {
+    position: relative;
+    z-index: 3;
+
+    height: 100vh;
+    width:auto;
+}
+
+/* =========================
+   SECTION 3 - FILM (FIXED)
+========================= */
+
+.film-section {
+    background: #F6F4E8;
+    padding: 100px 0;
+}
+
+/* container */
+.film-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.film-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.film-header h2 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 48px;
+    color: #DC9B9B;
+    font-weight: 700;
+}
+
+.film-header p {
+    font-size: 20px;
+    color: #5a7d6b;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* ===== GRID CLEAN ===== */
+.film-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 ảnh mỗi hàng */
+    gap: 16px;
+
+    max-width: 1200px;
+    margin: 40px auto;
+
+    /* FIX quan trọng */
+    grid-auto-rows: auto;
+}
+
+/* item */
+.film-item {
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+/* đảm bảo ảnh KHÔNG bị méo */
+.film-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* giữ đẹp */
+    aspect-ratio: 1 / 1; /* vuông đều */
+}
+
+/* hover nhẹ */
+.film-item:hover img {
+    transform: scale(1.05);
+}
+
+.film-item:nth-child(odd) {
+    transform: translateY(10px);
+}
+
+/* ===== BLOCK ===== */
+.film-block {
+    margin-bottom: 60px;
+}
+
+.film-block h3 {
+    font-family: 'Paytone One', sans-serif;
+    color: #407855;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.film-block p {
+    font-size: 20px;
+    color: #5a7d6b;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.film-line {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.film-line::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    border-bottom: 2px dashed #407855;
+}
+
+/* ===== SLIDER FINAL PERFECT ===== */
+.slider-new {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slider-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* ===== BASE SLIDE ===== */
+.slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.6s ease;
+    overflow: hidden;
+    border-radius: 20px;
+
+    background: transparent !important; /* 🔥 diệt cục xanh */
+
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.slide[style*="visibility: hidden"] {
+    transition: none !important;
+}
+
+/* ===== IMAGE ===== */
+.slide img {
+    display: block;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== OUTSIDE (NHỎ NHẤT) ===== */
+.slide.pos-0,
+.slide.pos-4 {
+    width: 198px;
+    height: 270px;
+
+    transform: translate(calc(-50% - 480px), -50%);
+    opacity: 0.2;
+    filter: blur(3px);
+
+    z-index: 1;
+}
+
+/* chỉnh bên phải */
+.slide.pos-4 {
+    transform: translate(calc(-50% + 480px), -50%);
+}
+
+/* ===== MIDDLE SIDE ===== */
+.slide.pos-1,
+.slide.pos-3 {
+    width: 220px;
+    height: 300px;
+
+    transform: translate(calc(-50% - 240px), -50%);
+    opacity: 0.5;
+    filter: blur(1.5px);
+
+    z-index: 5;
+}
+
+/* chỉnh bên phải */
+.slide.pos-3 {
+    transform: translate(calc(-50% + 240px), -50%);
+}
+
+/* ===== CENTER ===== */
+.slide.pos-2 {
+    height: 400px;
+    width: auto;
+
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    z-index: 10;
+    filter: none;
+    object-fit: contain;
+}
+
+/* ===== CROP 4 HÌNH NGOÀI ===== */
+.slide.pos-0 img,
+.slide.pos-1 img,
+.slide.pos-3 img,
+.slide.pos-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 🔥 crop đúng 220x300 */
+}
+
+/* ===== CENTER GIỮ TỈ LỆ ===== */
+.slide.pos-2 img {
+    height: 100%;
+    width: auto;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25); /* 🔥 nổi bật */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .film-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .film-header h2 {
+        font-size: 32px;
+    }
+}
+
+/* ===== CENTER SLIDER ===== */
+.slider-center {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* mỗi item chiếm 20% = 5 tấm */
+.slide-item {
+    min-width: 250px;
+    flex-shrink: 0;
+
+    transition: all 0.5s ease;
+
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+/* ảnh */
+.slide-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* tấm giữa */
+.slide-item.active {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.slider-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================
+   SECTION 4 - IMPORTANT DAY
+========================= */
+
+.important-section {
+    background: #E5EEE4;
+
+    min-height: 100vh; /* 🔥 QUAN TRỌNG */
+    display: flex;
+    align-items: center; /* căn giữa dọc */
+
+    padding: 0; /* bỏ padding để cao chuẩn 100vh */
+}
+
+.important-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* LEFT IMAGE */
+.important-image {
+    width: 50%;
+}
+
+.important-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* RIGHT TEXT */
+.important-content {
+    width: 50%;
+}
+
+.important-content h2 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #407855;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.important-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #407855;
+    text-align: justify;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .important-container {
+        flex-direction: column;
+    }
+
+    .important-image,
+    .important-content {
+        width: 100%;
+    }
+
+    .important-content h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .important-content p {
+        text-align: left;
+    }
+}
+
+/* =========================
+   SECTION 5 - GUESTBOOK
+========================= */
+
+.guestbook-section {
+    position: relative; /* 🔥 bắt buộc */
+
+    background: #FFE6E6;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.guestbook-container {
+    width: 90%;
+    max-width: 800px;
+
+    position: relative;
+    z-index: 2; /* trên lớp caro */
+}
+
+/* TITLE */
+.guestbook-container h2 {
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    color: #5aa39c;
+    margin-bottom: 20px;
+}
+
+/* DESC */
+.guestbook-desc {
+    text-align: center;
+    font-size: 18px;
+    color: #5f6f6a;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* FORM */
+.guestbook-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* label */
+.guestbook-form label {
+    font-size: 16px;
+    color: #5aa39c;
+    margin-bottom: 8px;
+}
+
+/* input + textarea */
+.guestbook-form input,
+.guestbook-form textarea {
+    border: 2px solid #5aa39c;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    outline: none;
+
+    background: transparent;
+}
+
+/* focus */
+.guestbook-form input:focus,
+.guestbook-form textarea:focus {
+    border-color: #3c8f88;
+}
+
+/* button */
+.guestbook-form button {
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+
+    background: #5aa39c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* hover */
+.guestbook-form button:hover {
+    background: #3c8f88;
+}
+
+.new-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.guest-avatar {
+    position: relative;
+}
+
+.guest-avatar img,
+.avatar-placeholder {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-placeholder {
+    background: #7a8f2a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.guest-content {
+    flex: 1;
+}
+
+.guest-message {
+    margin-bottom: 8px;
+}
+/* ===== INPUT FONT + COLOR ===== */
+.guestbook-form input,
+.guestbook-form textarea {
+    font-family: 'Montserrat', sans-serif; /* font */
+    color: #5f6f6a; /* màu chữ */
+}
+
+/* placeholder */
+.guestbook-form input::placeholder,
+.guestbook-form textarea::placeholder {
+    color: #5f6f6a;
+    opacity: 0.6; /* hơi nhạt hơn tí cho đẹp */
+}
+
+/* overlay caro */
+.guestbook-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    /* lớp trắng mờ */
+    background-color: rgba(255,255,255,0.4);
+
+    /* grid caro */
+    background-image:
+        linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+
+    background-size: 40px 40px; /* kích thước ô */
+
+    z-index: 1;
+}
+
+/* =========================
+   SECTION 6 - CLEAN AESTHETIC
+========================= */
+
+.guestbook-display {
+    background: #FFE6E6;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column; /* 🔥 QUAN TRỌNG */
+    justify-content: space-between; /* 🔥 đẩy đầu - cuối */
+
+    padding: 80px 0;
+}
+
+/* container */
+.guestbook-container6 {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* 🔥 chiếm full chiều cao */
+}
+
+/* TITLE CENTER */
+.guest-title {
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    font-size: 48px;
+    color: #407855;
+    margin-bottom: 50px;
+}
+
+/* GRID CHUẨN (KHÔNG DÙNG COLUMN NỮA) */
+.guestbook-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.guest-card {
+    background: rgba(255, 255, 255, 0.25);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    padding: 20px;
+    border-radius: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    color: #407855;
+    font-family: 'Montserrat', sans-serif;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+
+    position: relative;
+    transition: 0.3s;
+}
+
+/* hover */
+.guest-card:hover {
+    transform: translateY(-5px);
+}
+
+/* lệch nhẹ có kiểm soát */
+.guest-card:nth-child(2n) {
+    transform: translateY(5px);
+}
+
+.guest-card:nth-child(3n) {
+    transform: translateY(-5px);
+}
+
+/* quote */
+.guest-card::before {
+    content: "“";
+    font-size: 40px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #5aa39c;
+}
+
+/* message */
+.guest-message {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* name */
+.guest-name {
+    margin-top: 10px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.guestbook-form label {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.label {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.sub-label {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination svg {
+    width: 20px;
+}
+
+.custom-pagination {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+}
+
+.custom-pagination a,
+.custom-pagination span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-pagination a {
+    background: #f5eaea;
+    color: #407855;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.custom-pagination a:hover {
+    background: #407855;
+    color: white;
+}
+
+.custom-pagination .current {
+    background: #407855;
+    color: white;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .guestbook-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== FOOTER SECTION 6 ===== */
+.guest-footer {
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* text */
+.footer-text {
+    font-size: 20px;
+    color: #407855;
+    font-weight: 500;
+
+    text-align: center;
+}
