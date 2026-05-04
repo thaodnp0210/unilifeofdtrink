@@ -12,7 +12,19 @@ class GuestbookController extends Controller
         $imagePath = null;
 
         if ($request->hasFile('image')) {
-            $imagePath = $request->file('image')->store('guestbook', 'public');
+            $cloudinary = new Cloudinary([
+                'cloud' => [
+                    'cloud_name' => env('CLOUDINARY_CLOUD_NAME'),
+                    'api_key' => env('CLOUDINARY_API_KEY'),
+                    'api_secret' => env('CLOUDINARY_API_SECRET')
+                ]
+            ]);
+
+            $upload = $cloudinary->uploadApi()->upload(
+                $request->file('image')->getRealPath()
+            );
+
+            $imagePath = $upload['secure_url'];
         }
         
         Guestbook::create([

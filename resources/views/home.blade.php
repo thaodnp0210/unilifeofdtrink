@@ -263,7 +263,7 @@
                     <!-- Avatar -->
                     <div class="guest-avatar">
                         @if ($msg->image)
-                            <img src="{{ asset('storage/' . $msg->image) }}">
+                            <img src="{{ $msg->image }}">
                         @else
                             <div class="avatar-placeholder">
                                 {{ strtoupper(substr($msg->name ?? 'A', 0, 1)) }}
