@@ -327,8 +327,42 @@ html, body {
     position: relative;
     z-index: 3;
 
-    height: 100vh;
+    /* height: 100vh; */
     width:auto;
+}
+
+/* ===== FIX SECTION 2 MOBILE ===== */
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column; /* 🔥 đổi từ ngang → dọc */
+    }
+
+    .about-text {
+        width: 100%;
+        padding: 30px 20px; /* giảm padding cho mobile */
+    }
+
+    .about-text h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .about-image {
+        width: 100%;
+        min-height: auto;
+        justify-content: center;
+    }
+
+    .about-image img {
+        width: 80%;
+        height: auto; /* 🔥 QUAN TRỌNG: bỏ 100vh */
+    }
 }
 
 /* =========================
