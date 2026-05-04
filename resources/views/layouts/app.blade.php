@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>University Life of Dtrink</title>
     <link rel="icon" href="{{ asset('images/logo3.png') }}">
 

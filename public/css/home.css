@@ -263,31 +263,28 @@ html, body {
 }
 
 /* =========================
-   SECTION 2 - ABOUT ME
+   SECTION 2 - ABOUT ME FINAL
 ========================= */
 
 .about-section {
     background-color: #E6FFEF;
-    min-height: 100vh;
-    width: 100%;
+    padding: 80px 0; /* 🔥 thay vì 100vh */
 }
 
-/* chia layout full ngang */
+/* layout ngang */
 .about-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     width: 100%;
-    height: 100%;
-    min-height: 100vh;
+    padding: 0 60px;
+    gap: 60px;
 }
 
 /* ===== TEXT ===== */
 .about-text {
-    width: 50%;
-    padding-left: 60px;
-    padding-right: 110px;
+    width: 55%;
 
     display: flex;
     flex-direction: column;
@@ -299,69 +296,81 @@ html, body {
 .about-text h2 {
     font-family: 'Paytone One', sans-serif;
     font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .about-text p {
-    font-size: 20px;
-    line-height: 1.8;
-    margin-bottom: 18px;
-
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
     text-align: justify;
 }
 
 /* ===== IMAGE ===== */
 .about-image {
-    width: 50%;
-    min-height: 100vh;
-    position: relative;
-
+    width: 45%;
     display: flex;
-    align-items: stretch;
-    justify-content: flex-end; /* ❗ sát mép phải */
+    justify-content: center;
+    align-items: center;
 }
 
-/* ảnh trong about */
 .about-image img {
-    position: relative;
-    z-index: 3;
+    width: 100%;
+    max-width: 500px; /* 🔥 ảnh to hơn */
+    height: auto;
 
-    /* height: 100vh; */
-    width:auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
-/* ===== FIX SECTION 2 MOBILE ===== */
+/* ===== TABLET ===== */
 @media (max-width: 768px) {
 
     .about-container {
-        flex-direction: column; /* 🔥 đổi từ ngang → dọc */
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .about-text {
+        width: 55%;
+    }
+
+    .about-text h2 {
+        font-size: 26px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .about-image {
+        width: 45%;
+    }
+
+    .about-image img {
+        max-width: 100%;
+    }
+}
+
+/* ===== MOBILE NHỎ ===== */
+@media (max-width: 480px) {
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
     }
 
     .about-text {
         width: 100%;
-        padding: 30px 20px; /* giảm padding cho mobile */
-    }
-
-    .about-text h2 {
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .about-text p {
-        font-size: 16px;
-        text-align: left;
     }
 
     .about-image {
         width: 100%;
-        min-height: auto;
-        justify-content: center;
     }
 
     .about-image img {
-        width: 80%;
-        height: auto; /* 🔥 QUAN TRỌNG: bỏ 100vh */
+        max-width: 280px;
     }
 }
 
