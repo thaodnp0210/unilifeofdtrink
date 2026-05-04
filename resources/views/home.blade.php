@@ -52,7 +52,7 @@
             <span class="big-title">Diễm Trinh</span>
         </h1>
         <p class="description">
-            Mình là Mai Thị Diễm Trinh, sinh viên năm cuối (sắp hết) tại UEL. Trước khi dừng chân tại UEL, cùng nhìn lại các khoảnh khác con bé này đã chập chững bước qua cùng UEL nhé.....        </p>
+            Mình là Mai Thị Diễm Trinh, sinh viên năm cuối (sắp hết) tại UEL. Trước khi dừng chân tại UEL, cùng nhìn lại các khoảnh khắc con bé này đã chập chững bước qua cùng UEL nhé.....        </p>
     </div>
 </div>
 
