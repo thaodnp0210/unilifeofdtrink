@@ -52,11 +52,7 @@
             <span class="big-title">Diễm Trinh</span>
         </h1>
         <p class="description">
-            Mình là Mai Thị Diễm Trinh, sắp trở thành Tân cử nhân ngành Kinh doanh quốc tế tại Trường Đại học Kinh tế - Luật, ĐHQG-HCM. Đứng trước ngưỡng cửa tốt nghiệp, mình là một người trẻ đang chuẩn bị bước vào thị trường lao động với nhiều mơ mộng, nhưng cũng dần học cách nhìn thế giới thực tế hơn. Bên cạnh hành trình học tập, mình tự hào về quãng thời gian được trở thành cán bộ Đoàn – nơi mình học cách làm việc với con người, hiểu giá trị của tập thể và rèn luyện sự kiên trì trong những điều mình theo đuổi. Những trải nghiệm đó đã góp phần định hình được Diễm Trinh ngày hôm nay.
-        </p>
-        <p class="description">
-            Gần bốn năm đại học đối với mình không chỉ là giảng đường, mà còn là hành trình hiểu bản thân, thử sai và trưởng thành từng chút một. Trang web này là nơi mình lưu lại những điều đã đi qua, những điều đang học và cả những điều mình vẫn đang tìm kiếm - tuy chưa hoàn hảo nhưng là những điều chân thật nhất.
-        </p>
+            Mình là Mai Thị Diễm Trinh, sinh viên năm cuối (sắp hết) tại UEL. Trước khi dừng chân tại UEL, cùng nhìn lại các khoảnh khác con bé này đã chập chững bước qua cùng UEL nhé.....        </p>
     </div>
 </div>
 
@@ -69,19 +65,11 @@
             <h2>VỀ MÌNH</h2>
 
             <p>
-                Mình là Mai Thị Diễm Trinh, sắp trở thành Tân Cử nhân ngành Kinh doanh Quốc tế tại UEL.
-                Đứng trước ngưỡng cửa tốt nghiệp, mình là một người trẻ đang chuẩn bị bước vào thị trường lao động
-                với nhiều mơ mộng, nhưng cũng dần học cách nhìn thế giới thực tế hơn.
+                Mình là Mai Thị Diễm Trinh, sắp trở thành Tân cử nhân ngành Kinh doanh quốc tế tại Trường Đại học Kinh tế - Luật, ĐHQG-HCM. Đứng trước ngưỡng cửa tốt nghiệp, mình là một người trẻ đang chuẩn bị bước vào thị trường lao động với nhiều mơ mộng, nhưng cũng dần học cách nhìn thế giới thực tế hơn. Bên cạnh hành trình học tập, mình tự hào về quãng thời gian được trở thành cán bộ Đoàn – nơi mình học cách làm việc với con người, hiểu giá trị của tập thể và rèn luyện sự kiên trì trong những điều mình theo đuổi. Những trải nghiệm đó đã góp phần định hình được Diễm Trinh ngày hôm nay.
             </p>
 
             <p>
-                Bên cạnh hành trình học tập, mình tự hào khi có cơ hội trở thành một cán bộ Đoàn - vai trò giúp mình
-                học cách lãnh đạo, trách nhiệm và kiên trì với những điều mình tin.
-            </p>
-
-            <p>
-                Trang web này là nơi mình lưu lại những điều đã đi qua, những điều đang học
-                và cả những điều mình vẫn đang tìm kiếm.
+                Gần bốn năm đại học đối với mình không chỉ là giảng đường, mà còn là hành trình hiểu bản thân, thử sai và trưởng thành từng chút một. Trang web này là nơi mình lưu lại những điều đã đi qua, những điều đang học và cả những điều mình vẫn đang tìm kiếm - tuy chưa hoàn hảo nhưng là những điều chân thật nhất.
             </p>
         </div>
 
