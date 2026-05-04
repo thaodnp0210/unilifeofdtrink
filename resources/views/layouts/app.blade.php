@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>University Life of Dtrink</title>
-    <link rel="icon" href="{{ asset('images/logo2.png') }}">
+    <link rel="icon" href="{{ asset('images/logo3.png') }}">
 
     <!-- CSS -->
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">

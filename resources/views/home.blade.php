@@ -110,7 +110,7 @@
 
         <div class="film-block">
             <h3 class="film-line">Những ngày không quên</h3>
-            <p> Gần bốn năm đại học là một hành trình đủ dài để mình đi qua nhiều điều – từ những lần bắt đầu còn nhiều bỡ ngỡ, đến những trải nghiệm khiến mình thay đổi, và cả những bài học mà có lẽ chỉ khi thật sự đi qua mới hiểu hết. Ở đó, mình gặp những con người khác nhau, người đến rồi đi, người ở lại vàgit status những người trở thành một phần rất quan trọng trong hành trình này, cùng nhau đi qua những ngày rất bình thường nhưng lại trở thành ký ức rất đặc biệt. Không phải mọi khoảnh khắc đều hoàn hảo, nhưng chính những điều chưa trọn vẹn ấy lại khiến hành trình này trở nên đáng nhớ hơn bao giờ hết. Và khi nhìn lại, mình nhận ra: điều còn ở lại không chỉ là những gì mình đã làm, mà là những gì mình đã cảm nhận và những người đã cùng mình đi qua quãng đường này.</p>
+            <p> Gần bốn năm đại học là một hành trình đủ dài để mình đi qua nhiều điều – từ những lần bắt đầu còn nhiều bỡ ngỡ, đến những trải nghiệm khiến mình thay đổi, và cả những bài học mà có lẽ chỉ khi thật sự đi qua mới hiểu hết. Ở đó, mình gặp những con người khác nhau, có người đến rồi đi, có người ở lại và có những người trở thành một phần rất quan trọng trong hành trình này, cùng nhau đi qua những ngày rất bình thường nhưng lại trở thành ký ức rất đặc biệt. Không phải mọi khoảnh khắc đều hoàn hảo, nhưng chính những điều chưa trọn vẹn ấy lại khiến hành trình này trở nên đáng nhớ hơn bao giờ hết. Và khi nhìn lại, mình nhận ra: điều còn ở lại không chỉ là những gì mình đã làm, mà là những gì mình đã cảm nhận và những người đã cùng mình đi qua quãng đường này.</p>
 
             <div class="slider-new">
                 <div class="slider-track">
