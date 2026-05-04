@@ -52,7 +52,10 @@
             <span class="big-title">Diễm Trinh</span>
         </h1>
         <p class="description">
-            Mình là Mai Thị Diễm Trinh, sinh viên năm cuối (sắp hết) tại UEL. Trước khi dừng chân tại UEL, cùng nhìn lại các khoảnh khắc con bé này đã chập chững bước qua cùng UEL nhé...
+            Mình là Mai Thị Diễm Trinh, sắp trở thành Tân cử nhân ngành Kinh doanh quốc tế tại Trường Đại học Kinh tế - Luật, ĐHQG-HCM. Đứng trước ngưỡng cửa tốt nghiệp, mình là một người trẻ đang chuẩn bị bước vào thị trường lao động với nhiều mơ mộng, nhưng cũng dần học cách nhìn thế giới thực tế hơn. Bên cạnh hành trình học tập, mình tự hào về quãng thời gian được trở thành cán bộ Đoàn – nơi mình học cách làm việc với con người, hiểu giá trị của tập thể và rèn luyện sự kiên trì trong những điều mình theo đuổi. Những trải nghiệm đó đã góp phần định hình được Diễm Trinh ngày hôm nay.
+        </p>
+        <p class="description">
+            Gần bốn năm đại học đối với mình không chỉ là giảng đường, mà còn là hành trình hiểu bản thân, thử sai và trưởng thành từng chút một. Trang web này là nơi mình lưu lại những điều đã đi qua, những điều đang học và cả những điều mình vẫn đang tìm kiếm - tuy chưa hoàn hảo nhưng là những điều chân thật nhất.
         </p>
     </div>
 </div>
@@ -119,7 +122,7 @@
 
         <div class="film-block">
             <h3 class="film-line">Những ngày không quên</h3>
-            <p> Gần bốn năm đại học là một hành trình đủ dài để mình đi qua nhiều điều – từ những lần bắt đầu còn nhiều bỡ ngỡ, đến những trải nghiệm khiến mình thay đổi, và cả những bài học mà có lẽ chỉ khi thật sự đi qua mới hiểu hết. Ở đó, mình gặp những con người khác nhau,有 người đến rồi đi,有 người ở lại và有 những người trở thành một phần rất quan trọng trong hành trình này, cùng nhau đi qua những ngày rất bình thường nhưng lại trở thành ký ức rất đặc biệt. Không phải mọi khoảnh khắc đều hoàn hảo, nhưng chính những điều chưa trọn vẹn ấy lại khiến hành trình này trở nên đáng nhớ hơn bao giờ hết. Và khi nhìn lại, mình nhận ra: điều còn ở lại không chỉ là những gì mình đã làm, mà là những gì mình đã cảm nhận và những người đã cùng mình đi qua quãng đường này.</p>
+            <p> Gần bốn năm đại học là một hành trình đủ dài để mình đi qua nhiều điều – từ những lần bắt đầu còn nhiều bỡ ngỡ, đến những trải nghiệm khiến mình thay đổi, và cả những bài học mà có lẽ chỉ khi thật sự đi qua mới hiểu hết. Ở đó, mình gặp những con người khác nhau, người đến rồi đi, người ở lại vàgit status những người trở thành một phần rất quan trọng trong hành trình này, cùng nhau đi qua những ngày rất bình thường nhưng lại trở thành ký ức rất đặc biệt. Không phải mọi khoảnh khắc đều hoàn hảo, nhưng chính những điều chưa trọn vẹn ấy lại khiến hành trình này trở nên đáng nhớ hơn bao giờ hết. Và khi nhìn lại, mình nhận ra: điều còn ở lại không chỉ là những gì mình đã làm, mà là những gì mình đã cảm nhận và những người đã cùng mình đi qua quãng đường này.</p>
 
             <div class="slider-new">
                 <div class="slider-track">
