@@ -240,7 +240,7 @@ html, body {
 /* dòng nhỏ phía trên */
 .small-title {
     display: block;
-    font-size: 28px;
+    font-size: clamp(16px, 2vw, 28px);
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -248,7 +248,7 @@ html, body {
 /* tên to */
 .big-title {
     display: block;
-    font-size: 90px;
+    font-size: clamp(40px, 6vw, 90px);
     font-weight: 600;
     line-height: 1.1;
 }
@@ -256,7 +256,7 @@ html, body {
 /* đoạn mô tả */
 .description {
     margin-top: 25px;
-    font-size: 20px;
+    font-size: clamp(14px, 1.5vw, 20px);
     line-height: 1.6;
     max-width: 570px;
     opacity: 0.95;
